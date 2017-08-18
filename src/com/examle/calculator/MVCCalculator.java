@@ -9,6 +9,8 @@ public class MVCCalculator {
         CalculatorView theVeiw = new CalculatorView();
         CalculatorModel theModel = new CalculatorModel();
 
+        CalculatorController theController = new CalculatorController(theVeiw, theModel);
+
         theVeiw.setVisible(true);
 
     }
